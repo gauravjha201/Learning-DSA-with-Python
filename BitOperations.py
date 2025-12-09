@@ -1,9 +1,9 @@
-# a=5   #swaping by XOR operator
-# b=10
-# a=a^b
-# b=a^b
-# a=a^b
-# print(a,b)
+a=5   #swaping by XOR operator
+b=10
+a=a^b
+b=a^b
+a=a^b
+print(a,b)
 
 
 #check if the i bit set or not by left operator
