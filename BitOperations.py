@@ -7,7 +7,7 @@ print(a,b)
 
 
 #check if the i bit set or not by left operator
-# num=13
+# num=1
 # i=2
 # c=1<<i  #left shift
 # d=num&c  #and with number and c
