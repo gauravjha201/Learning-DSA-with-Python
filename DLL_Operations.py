@@ -77,13 +77,12 @@ class Doubly_Linked_List:
         if self.head is None :
             return None
         temp=self.head
-
+        
         if temp.data==key:
             self.head=temp.next
             temp.next.prev=None
-        else:
-            self.head=None
-        return
+            del temp
+            return
 
         while temp and temp.next is not None :
             temp=temp.next
