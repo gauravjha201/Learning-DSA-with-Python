@@ -12,7 +12,7 @@ def get_prime(num):
             prime_nums.append(i)
     return prime_nums
 
-print(get_prime(20))
+print(get_prime(20) )
 
 
 
