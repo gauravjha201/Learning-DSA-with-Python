@@ -1,17 +1,5 @@
 nums=[10,7,6,4,5,4,5,5,3,2]
 
-def heapify(nums,ind,val):
-    if nums[ind]>val:
-        nums[ind]=val
-        heapify_down(nums,ind)
-    else:
-        nums[ind]=val
-        heapify_up(nums,ind)
-    
-    return nums
-
-heapify(nums,1,12)
-print(nums)
 
 def heapify_down(nums,ind):
     n=len(nums)
@@ -37,6 +25,18 @@ def heapify_up(nums,ind):
         nums[parent_ind],nums[ind]=nums[ind],nums[parent_ind]
         heapify_up(nums,parent_ind)
 
+def heapify(nums,ind,val):
+    if nums[ind]>val:
+        nums[ind]=val
+        heapify_down(nums,ind)
+    else:
+        nums[ind]=val
+        heapify_up(nums,ind)
+    
+    return nums
+
+heapify(nums,1,12)
+print(nums)
 
 
     
