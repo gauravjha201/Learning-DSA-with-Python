@@ -70,12 +70,13 @@
 #         quick_sort(nums,p_index+1,high)
 
 
-# def fibbo(n):
-#     if n<=0:
-#         return
-#     print(n)
-#     return fibbo(n-2)+fibbo(n-1)
-# fibbo(10)
+def fibbo(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    return fibbo(n-1)+fibbo(n-2)
+print(fibbo(10))
 
 
 # def fact(n):
@@ -84,13 +85,12 @@
 #     return n*fact(n-1)
 # print(fact(5))
 
-st='abc'
-def reverse_str(st,ind):
-    if ind>=len(st):
-        return
+# st='abc'
+# def reverse_str(st,ind):
+#     if ind>=len(st):
+#         return
 
-    reverse_str(st,ind+1)
-    print(st[ind],end="")
-
-reverse_str(st,0)
+#     reverse_str(st,ind+1)
+#     print(st[ind],end="")
+# reverse_str(st,0)
 
