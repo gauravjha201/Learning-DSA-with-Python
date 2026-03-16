@@ -52,20 +52,45 @@
 #     return result
 
 
-def partition(nums,low,high):
-    pivot=nums[low]
-    i=low
-    j=high
-    while i<=j:
-        while pivot>=nums[i] and i<=high-1  :
-            i+=1
-        while pivot<nums[j] and j>=low+1:
-            j-=1
-        nums[i],nums[j]=nums[j],nums[i]
-    return j
-def quick_sort(nums,low,high):
-    if low<high:
-        p_index=partition(nums,0,len(nums))
-        quick_sort(nums,low,p_index-1)
-        quick_sort(nums,p_index+1,high)
+# def partition(nums,low,high):
+#     pivot=nums[low]
+#     i=low
+#     j=high
+#     while i<=j:
+#         while pivot>=nums[i] and i<=high-1  :
+#             i+=1
+#         while pivot<nums[j] and j>=low+1:
+#             j-=1
+#         nums[i],nums[j]=nums[j],nums[i]
+#     return j
+# def quick_sort(nums,low,high):
+#     if low<high:
+#         p_index=partition(nums,0,len(nums))
+#         quick_sort(nums,low,p_index-1)
+#         quick_sort(nums,p_index+1,high)
+
+
+# def fibbo(n):
+#     if n<=0:
+#         return
+#     print(n)
+#     return fibbo(n-2)+fibbo(n-1)
+# fibbo(10)
+
+
+# def fact(n):
+#     if n<=1:
+#         return 1
+#     return n*fact(n-1)
+# print(fact(5))
+
+st='abc'
+def reverse_str(st,ind):
+    if ind>=len(st):
+        return
+
+    reverse_str(st,ind+1)
+    print(st[ind],end="")
+
+reverse_str(st,0)
 
