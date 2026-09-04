@@ -70,13 +70,13 @@
 #         quick_sort(nums,p_index+1,high)
 
 
-def fibbo(n):
-    if n==0:
-        return 0
-    if n==1:
-        return 1
-    return fibbo(n-1)+fibbo(n-2)
-print(fibbo(10))
+# def fibbo(n):
+#     if n==0:
+#         return 0
+#     if n==1:
+#         return 1
+#     return fibbo(n-1)+fibbo(n-2)
+# print(fibbo(10))
 
 
 # def fact(n):
@@ -94,3 +94,9 @@ print(fibbo(10))
 #     print(st[ind],end="")
 # reverse_str(st,0)
 
+def solve(n,product):#Tail recursion
+    if n==1:
+        return product
+    return solve(n-1,product*n)
+
+print(solve(5,1))
